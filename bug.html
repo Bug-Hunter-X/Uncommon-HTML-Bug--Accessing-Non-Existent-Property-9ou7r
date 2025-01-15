@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrectly trying to access a non-existent property
+    document.getElementById("myDiv").nonExistentProperty.style.display = "none"; 
+  </script>
+</body>
+</html>
